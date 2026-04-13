@@ -28,9 +28,11 @@ A LabVIEW data acquisition program that **reads wireless strain gauge data from 
 
 ## How to run
 
-1. Open the project in LabVIEW (open the `.lvproj` file if included).
+1. Open the project in LabVIEW (open the `.lvproj` file).
 2. Open the main VI and click the **Run** arrow.
 3. Select the correct **VISA resource / COM port** on the front panel.
+4. Press Confirm
+5. Press Start
 
 ---
 
@@ -39,19 +41,22 @@ A LabVIEW data acquisition program that **reads wireless strain gauge data from 
 ### 1) Select the COM port
 - Choose the correct **VISA Resource Name** (COM port) for the Arduino device.
 
-### 2) Start acquisition
+### 2) Confirm the COM port
+- Press **Confirm** once you have selected the correct COM port.
+
+### 3) Start acquisition
 - Press **Start** to begin reading data and plotting it live.
 
-### 3) View live data
+### 4) View live data
 - The program displays the latest **Time** and **Strain** values and updates the **XY graph** continuously.
 
-### 4) Record to file (optional)
+### 5) Record to file (optional)
 The program can save results to a CSV file for later analysis.
 
 - Enable recording using the **Record** control (checkbox/event-driven toggle).
 - A **Recording** indicator light shows when data is actively being saved.
 
-### 5) Stop
+### 6) Stop
 - Press **Stop** to end acquisition and close the program cleanly.
 
 ---
